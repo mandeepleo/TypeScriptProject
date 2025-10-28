@@ -11,3 +11,17 @@ console.log(typeof(box)); // string
 
 box = 100;
 console.log(typeof(box)); // number
+
+function varScope(){        // function scope
+    if(true){
+        var msg="Hello world!";
+        //console.log(msg);
+    }
+    console.log(msg);
+}
+
+varScope(); // call the function
+
+const pi=3.14;
+console.log("Value of pi is "+pi);
+
