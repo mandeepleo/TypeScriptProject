@@ -19,5 +19,9 @@ console.log(parseFloat("12.34xyz")); //parseFloat can convert string to floating
 console.log(Number("56.78")); //Number converts the entire string to a number, returns NaN if the string is not a valid number
 console.log(Number("abc123")); //NaN because the string is not a valid number
 
-const slicedArray: Array<string | undefined> = food.slice(0,3); //Slicing the array from index 0 to 3
+const slicedArray: Array<string | undefined> = food.slice(1,3); //Slicing the array from index 1 to 3 (excluding index 3)
 console.log(slicedArray);
+
+const splicedArray: Array<string | undefined> = food.splice(2,2,"Tacos","Fries"); //Removing 2 elements from index 2 and adding "Tacos" and "Fries" at that position
+console.log(splicedArray);  //Output: [ <1 empty item>, 'Pasta' ]
+console.log(food); //Updated food array after splice operation
