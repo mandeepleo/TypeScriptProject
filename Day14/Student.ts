@@ -46,7 +46,3 @@ Student.changeSchoolName("XYZ High School");
 console.log("After changing school name:");
 student1.getDetails();
 student2.getDetails();
-
-
-
-
